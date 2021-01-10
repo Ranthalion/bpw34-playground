@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 5FF9CBEE
+P 3500 2950
+F 0 "R1" H 3568 2996 50  0000 L CNN
+F 1 "R_US" H 3568 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3540 2940 50  0001 C CNN
+F 3 "~" H 3500 2950 50  0001 C CNN
+	1    3500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5FF9D579
+P 4050 3400
+F 0 "C1" V 4302 3400 50  0000 C CNN
+F 1 "CP1" V 4211 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 4050 3400 50  0001 C CNN
+F 3 "~" H 4050 3400 50  0001 C CNN
+	1    4050 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 5FF9E7A3
+P 5050 3850
+F 0 "Q1" H 5241 3896 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 5241 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5250 3950 50  0001 C CNN
+F 3 "~" H 5050 3850 50  0001 C CNN
+	1    5050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_BCE Q2
+U 1 1 5FF9F309
+P 5500 2600
+F 0 "Q2" H 5690 2554 50  0000 L CNN
+F 1 "Q_PNP_BCE" H 5690 2645 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5700 2700 50  0001 C CNN
+F 3 "~" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5FF9FDA8
+P 6350 3650
+F 0 "L1" H 6403 3696 50  0000 L CNN
+F 1 "L" H 6403 3605 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6350 3650 50  0001 C CNN
+F 3 "~" H 6350 3650 50  0001 C CNN
+	1    6350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FFA061A
+P 6350 2650
+F 0 "D2" V 6389 2532 50  0000 R CNN
+F 1 "LED" V 6298 2532 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6350 2650 50  0001 C CNN
+F 3 "~" H 6350 2650 50  0001 C CNN
+	1    6350 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensor_Optical:BPW34 D1
+U 1 1 5FFA21E7
+P 2600 2850
+F 0 "D1" V 2596 2772 50  0000 R CNN
+F 1 "BPW34" V 2505 2772 50  0000 R CNN
+F 2 "OptoDevice:Osram_DIL2_4.3x4.65mm_P5.08mm" H 2600 3025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/81521/bpw34.pdf" H 2550 2850 50  0001 C CNN
+	1    2600 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 2400 5600 2200
+Connection ~ 5600 2200
+Wire Wire Line
+	5600 2200 3500 2200
+Wire Wire Line
+	4200 3400 5600 3400
+Wire Wire Line
+	6350 3400 6350 3500
+Wire Wire Line
+	3500 3100 3500 3400
+Wire Wire Line
+	3500 3400 3900 3400
+Wire Wire Line
+	4850 3850 4250 3850
+Wire Wire Line
+	3500 3850 3500 3400
+Connection ~ 3500 3400
+Wire Wire Line
+	5150 4050 5150 4400
+Wire Wire Line
+	5150 4400 6350 4400
+Wire Wire Line
+	6350 4400 6350 3800
+Wire Wire Line
+	2600 3050 2600 4400
+Wire Wire Line
+	2600 4400 5150 4400
+Connection ~ 5150 4400
+Wire Wire Line
+	5300 2600 5150 2600
+Wire Wire Line
+	5150 2600 5150 3650
+Wire Wire Line
+	3500 2200 2600 2200
+Connection ~ 3500 2200
+Wire Wire Line
+	2600 2200 2600 2750
+Wire Wire Line
+	3500 2200 3500 2800
+Connection ~ 5600 3400
+Wire Wire Line
+	5600 3400 6350 3400
+Wire Wire Line
+	5600 2800 5600 3400
+Wire Wire Line
+	6350 2200 6350 2500
+Wire Wire Line
+	5600 2200 6350 2200
+Wire Wire Line
+	6350 2800 6350 3400
+Connection ~ 6350 3400
+$Comp
+L Device:R_US R2
+U 1 1 5FFA78B5
+P 4100 3850
+F 0 "R2" V 3895 3850 50  0000 C CNN
+F 1 "R_US" V 3986 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4140 3840 50  0001 C CNN
+F 3 "~" H 4100 3850 50  0001 C CNN
+	1    4100 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 3850 3500 3850
+$EndSCHEMATC
